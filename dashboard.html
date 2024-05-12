@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>aroma bumi</title>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="header-logo">
+                <img src="aset/Logo White.png" alt="">
+            </div>
+            <div class="header-menu">
+                <ul>
+                    <li>Products</li>
+                    <li>Store</li>
+                    <li>Contacts</li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="main-content">
+        <div class="main-content-top">
+            <div class="main-content-top-container">
+                <h1>Freshly Brewed</h1>
+                <h1 class="second-title">Coffee & Tea</h1>
+                <h3>Best qualities from our local soil</h3>
+            </div>
+        </div>
+        <div class="main-content-whoarewe">
+            <div class="main-content-whoarewe-container">
+                <div class="side whoarewe-left">
+                    <div class="image-frame">
+                        <img src="aset/Who are we.jpg" alt="">
+                    </div>
+                </div>
+                <div class="side whoarewe-right">
+                    <h2>Who are we?</h2>
+                    <p>We are Jakarta-based coffee and tea house focused on professionally brewing local sourced, high quality, coffee beans and tea leaves.</p>
+                </div>
+            </div>
+        </div>
+        <div class="main-content-productshowcase">
+            <div class="main-content-productshowcase-container">
+                <div class="side productshowcase-left">
+                    <h2>Product Showcase</h2>
+                    <p>Our product contain the highest quality ingredients processed with care.</p>
+                    <a href="#">See our coffee and tea</a>
+                </div>
+                <div class="side productshowcase-right">
+                    <div class="image-frame">
+                        <img src="aset/Our products.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-content-hangoutwithus">
+            <div class="main-content-hangoutwithus-container">
+                <div class="side hangoutwithus-left">
+                    <div class="image-frame">
+                        <img src="aset/Hang out with us.jpg" alt="">
+                    </div>
+                </div>
+                <div class="side hangoutwithus-right">
+                    <h2>Hangout with us!</h2>
+                    <p>Our stores use sustainable furnitures, surrounded by nature, to help our planet survive.</p>
+                    <a href="#">Find our cafe</a>
+                </div>
+            </div>
+        </div>
+        <div class="main-content-findout">
+            <div class="main-content-findout-container">
+                <h2>Find us out at Instagram <a href="#">@aroma_bumi</a>!</h2>
+                <div class="gallery-coffee">
+                    <img src="aset/Feed 1.png" alt="">
+                    <img src="aset/Feed 2.png" alt="">
+                    <img src="aset/Feed 3.png" alt="">
+                    <img src="aset/Feed 4.png" alt="">
+                    <img src="aset/Feed 5.png" alt="">
+                    <img src="aset/Feed 6.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="main-content-askusmore">
+            <div class="main-content-askusmore-container">
+                <h2>Ask us more!</h2>
+                <p>If you have any questions or interested with us, kindly let us know here</p>
+                <a href="#">Contact us</a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer footer-logo">
+                <img src="aset/Logo White.png" alt="">
+                <i class="fa-solid fa-envelope" style="color: #ffffff;"></i>
+                <i class="fa-solid fa-square-phone-flip" style="color: #ffffff;"></i>
+            </div>
+            <div class="footer footer-menu-product">
+                <ul>
+                    <li class="menu-head">Products</li>
+                    <li>Coffe Based</li>
+                    <li>Non-Coffe</li>
+                    <li>Tea Based</li>
+                </ul>
+            </div>
+            <div class="footer footer-menu-store">
+                <ul>
+                    <li class="menu-head">Store</li>
+                    <li>Location</li>
+                </ul>
+            </div>
+            <div class="footer footer-menu-contact">
+                <ul>
+                    <li class="menu-head">Contact</li>
+                    <li>Customer Service</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Tambahkan event listener untuk mendeteksi peristiwa scroll
+window.addEventListener('scroll', function() {
+    // Ambil elemen header
+    var header = document.querySelector('header');
+
+    // Periksa posisi scroll
+    if (window.scrollY > 500) {
+        // Jika posisi scroll lebih dari 50 piksel dari atas halaman, tambahkan kelas 'header-scrolled'
+        header.classList.add('header-scrolled');
+    } else {
+        // Jika posisi scroll kurang dari atau sama dengan 50 piksel dari atas halaman, hapus kelas 'header-scrolled'
+        header.classList.remove('header-scrolled');
+    }
+});
+
+    </script>
+</body>
+</html>
