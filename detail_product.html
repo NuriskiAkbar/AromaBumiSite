@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet_detail_product.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Detail Product</title>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="header-logo">
+                <img src="aset/Logo White.png" alt="">
+            </div>
+            <div class="header-menu">
+                <ul>
+                    <li>Products</li>
+                    <li>Store</li>
+                    <li>Contacts</li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="main">
+        <div class="product_overview">
+            <img id="detail-image" src="" alt="">
+            <div class="product_name">
+                <h2 id="detail-name"></h2>
+                <p>smooth like butter like criminal undercover</p>
+                <h2 id="detail-price"></h2>
+            </div>
+        </div>
+        <div class="product_description">
+            <h2>Description</h2>
+            <p>Made with a perfect combination of freshly grinded arabic coffee beans, full cream milk, and exqusite butterscoth sauce. Perfect for those who crave little bit of sweet things in their life.</p>
+            <a href="products.html"> <i class="fa-solid fa-angle-left" style="color: #ffffff;"></i>  Back to our products</a>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer footer-logo">
+                <img src="aset/Logo White.png" alt="">
+                <i class="fa-solid fa-envelope" style="color: #ffffff;"></i>
+                <i class="fa-solid fa-square-phone-flip" style="color: #ffffff;"></i>
+            </div>
+            <div class="footer footer-menu-product">
+                <ul>
+                    <li class="menu-head">Products</li>
+                    <li>Coffe Based</li>
+                    <li>Non-Coffe</li>
+                    <li>Tea Based</li>
+                </ul>
+            </div>
+            <div class="footer footer-menu-store">
+                <ul>
+                    <li class="menu-head">Store</li>
+                    <li>Location</li>
+                </ul>
+            </div>
+            <div class="footer footer-menu-contact">
+                <ul>
+                    <li class="menu-head">Contact</li>
+                    <li>Customer Service</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const name = localStorage.getItem('product-name');
+        const price = localStorage.getItem('product-price');
+        const image = localStorage.getItem('product-image');
+
+        document.getElementById('detail-name').textContent = name;
+        document.getElementById('detail-price').textContent = price+",-";
+        document.getElementById('detail-image').src = image;
+    </script>
+</body>
+</html>
