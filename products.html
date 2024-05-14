@@ -28,7 +28,7 @@
             <p>Locally sourced best ingredients = best coffee</p>
 
             <div class="products-container">
-                <div class="product-item">
+                <div onclick="handleClick(this)" class="product-item" data-name="Aren Latte" data-price="Rp. 18.000" data-image="aset/aren latte.png">
                     <div class="product-wrapper">
                         <div class="label">
                             <p class="product-name">Aren Latte</p>
@@ -38,7 +38,7 @@
                         <img src="aset/aren latte.png" alt="">
                     </div>
                 </div>
-                <div class="product-item">
+                <div onclick="handleClick(this)" class="product-item" data-name="Cafe Latte" data-price="Rp. 24.000" data-image="aset/cafe latte.png">
                     <div class="product-wrapper">
 
                         <div class="label">
@@ -49,7 +49,7 @@
                         <img src="aset/cafe latte.png" alt="">
                     </div>
                 </div>
-                <div class="product-item">
+                <div onclick="handleClick(this)" class="product-item" data-name="Caramel Latte" data-price="Rp. 30.000" data-image="aset/caramel latte.png">
                     <div class="product-wrapper">
                         <div class="label">
                             <p class="product-name">Caramel Latte</p>
@@ -60,7 +60,7 @@
                     </div>
                     
                 </div>
-                <div class="product-item">
+                <div onclick="handleClick(this)" class="product-item"  data-name="Americano" data-price="Rp. 18.000" data-image="aset/Americano.png">
                     <div class="product-wrapper">
                         <div class="label">
                         <p class="product-name">Americano</p>
@@ -71,7 +71,7 @@
                     </div>
                     
                 </div>
-                <div class="product-item">
+                <div onclick="handleClick(this)" class="product-item" data-name="Cappuccino" data-price="Rp. 24.000" data-image="aset/cappucino.png">
                     <div class="product-wrapper">
                        <div class="label">
                         <p class="product-name">Cappucino</p>
@@ -82,7 +82,7 @@
                     </div>
                     
                 </div>
-                <div class="product-item">
+                <div onclick="handleClick(this)" class="product-item" data-name="Butterscotch" data-price="Rp. 24.000" data-image="aset/butterscotch.png">
                     <div class="product-wrapper">
                     <div class="label">
                         <p class="product-name">Butterscotch</p>
@@ -123,5 +123,19 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        function handleClick(element){
+            const name = element.getAttribute('data-name');
+            const price = element.getAttribute('data-price');
+            const image = element.getAttribute('data-image');
+
+            localStorage.setItem('product-name', name);
+            localStorage.setItem('product-price', price);
+            localStorage.setItem('product-image', image);
+
+            window.location.href = "detail_product.html";
+        }
+    </script>
 </body>
 </html>
