@@ -1,0 +1,177 @@
+@media all and (max-width: 670px){
+    header {
+        width: 100%;
+        height: 150px;
+        overflow: hidden;
+        position: fixed;
+        z-index: 9999;
+    }
+    
+    header .header-container{
+        width: 90%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    header .header-container .header-logo{
+        width: 100%;
+    }
+
+    header .header-container .header-menu{
+        width: 100%;
+    }
+
+    header .header-logo img{
+        padding: 15px 0;
+        width: 200px;
+    }
+
+    header .header-menu {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    header .header-menu li{
+        margin-right: 30px;
+        margin-left: 30px;
+        line-height: 70px;
+        color: white;
+    }
+
+    .header-scrolled{
+        transition: all ease-in-out 0.4s;
+        width: 100%;
+        height: 150px;
+        overflow: hidden;
+        position: fixed;
+        z-index: 9999;
+        background-color: #148b8d;
+    }
+
+    .main .container {
+        width: 90%;
+        margin: auto;
+        text-align: center;
+    }
+    
+    .main .container .closed-by-container{
+        height: 80px;
+    }
+    
+    .main .container h2{
+        color: #148b8d;
+        font-weight: bold;
+        font-size: 25px;
+        margin-top: 100px;
+        margin-bottom: 20px;
+    }
+    
+    
+    .main .container .products-container{
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 40px;
+        column-gap: 20px;
+        row-gap: 20px;
+    }
+    
+    .main .container .products-container .product-item{
+        flex: auto;
+        width: 30%;
+        height: 200px;
+        border-radius: 30px;
+        position: relative;
+    }
+    
+    .main .container .products-container .product-item:hover img{
+        transform: translateY(-30%);
+        cursor: pointer;
+    }
+    
+    .main .container .products-container .product-item:hover .label{
+        transform: translateY(250%);
+        cursor: pointer;
+    }
+    
+    .main .container .products-container .product-item .product-wrapper{
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        background-image: url(aset/Coffee\ background.png);
+        background-size: cover;
+        border-radius: 20px;
+    }
+    
+    .main .container .products-container .product-item .product-wrapper .label{
+        position: absolute;
+        top: 10%;
+        width: 100%;
+        color: white;
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    .main .container .products-container .product-item .label .product-name{
+        margin-bottom: 10px;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    
+    .main .container .products-container .product-item img{
+        width: 100%;
+        height: 100%;
+        padding-top: 60px;
+        margin: auto;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    footer{
+        width: 100%;
+        background-color: #0f3c4c;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+    
+    footer .footer-container {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        padding-top: 50px;
+        padding-bottom: 100px;
+    }
+    
+    footer .footer-container .footer{
+        flex: auto;
+    }
+    
+    footer .footer-container .footer img{
+        width: 150px;
+        margin-bottom: 10px;
+        display: block;
+        float: left;
+    }
+
+    footer .footer-container .footer i{
+        margin-right: 5px;
+        float: right;
+    }
+    
+    footer .footer-container .footer li{
+        margin-bottom: 15px;
+        color: white;
+        font-weight: normal;
+    }
+
+    footer .footer-container .footer-logo{
+        margin-bottom: 20px;
+    }
+
+    footer .footer-container .footer li:not(.menu-head){
+        text-indent: 25px;
+    }
+    
+    footer .footer-container .footer .menu-head{
+        color: #ec8c04;
+    }
+}
