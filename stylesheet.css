@@ -51,7 +51,7 @@ table {
 /*******************************/
 header {
     width: 100%;
-    height: 70px;
+    height: 80px;
     overflow: hidden;
     position: fixed;
     z-index: 9999;
@@ -73,6 +73,11 @@ header .header-menu li{
     float: right;
     margin-right: 40px;
     line-height: 70px;
+    color: white;
+}
+
+header .header-menu li a{
+    text-decoration: none;
     color: white;
 }
 
@@ -132,8 +137,8 @@ header .header-menu li{
 }
 
 .main-content .main-content-whoarewe .main-content-whoarewe-container .side .image-frame{
-    height: 350px;
-    width: 300px;
+    height: 250px;
+    width: 250px;
     border-radius: 20px;
     float: right;
     margin-right: 50px;
@@ -141,8 +146,8 @@ header .header-menu li{
 }
 
 .main-content .main-content-whoarewe .main-content-whoarewe-container img{
-    width: 300px;
-    height: 350px;
+    width: 250px;
+    height: 250px;
 }
 
 .main-content .main-content-whoarewe .main-content-whoarewe-container .side{
@@ -200,6 +205,7 @@ header .header-menu li{
 
 .main-content .main-content-productshowcase .main-content-productshowcase-container .productshowcase-left {
     margin-right: 50px;
+    text-align: right;
 }
 
 .main-content .main-content-productshowcase .main-content-productshowcase-container .productshowcase-left h2{
@@ -231,8 +237,8 @@ header .header-menu li{
 }
 
 .main-content .main-content-hangoutwithus .main-content-hangoutwithus-container .side .image-frame{
-    height: 350px;
-    width: 350px;
+    height: 250px;
+    width: 250px;
     border-radius: 20px;
     float: right;
     margin-right: 30px;
@@ -240,8 +246,8 @@ header .header-menu li{
 }
 
 .main-content .main-content-hangoutwithus .main-content-hangoutwithus-container img{
-    width: 350px;
-    height: 350px;
+    width: 250px;
+    height: 250px;
 }
 
 .main-content .main-content-hangoutwithus .main-content-hangoutwithus-container .side{
@@ -346,6 +352,7 @@ header .header-menu li{
     display: inline-block;
     margin: 10px 0 50px 0;
 }
+
 footer{
     width: 100%;
     background-color: #0f3c4c;
@@ -354,7 +361,7 @@ footer{
 }
 
 footer .footer-container {
-    width: 90%;
+    width: 70%;
     margin: auto;
     display: flex;
     padding-top: 50px;

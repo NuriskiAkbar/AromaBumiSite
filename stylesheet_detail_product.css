@@ -81,6 +81,11 @@ header .header-menu li{
     color: white;
 }
 
+header .header-menu li a{
+    text-decoration: none;
+    color: white;
+}
+
 .main{
     padding-top: 80px;
     width: 900px;
@@ -135,7 +140,6 @@ header .header-menu li{
     display: inline-block;
     color: white;
 }
-
 
 footer{
     background-color: #0f3c4c;
