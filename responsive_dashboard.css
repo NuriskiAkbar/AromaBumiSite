@@ -33,9 +33,20 @@
     }
     
     header .header-menu li{
-        margin-right: 10px;
+        margin-right: 30px;
+        margin-left: 30px;
         line-height: 70px;
         color: white;
+    }
+
+    .header-scrolled{
+        transition: all ease-in-out 0.4s;
+        width: 100%;
+        height: 150px;
+        overflow: hidden;
+        position: fixed;
+        z-index: 9999;
+        background-color: #148b8d;
     }
 
     .main-content .main-content-top {
@@ -92,17 +103,17 @@
     }
     
     .main-content .main-content-whoarewe .main-content-whoarewe-container .side .image-frame{
-        height: 150px;
-        width: 50%;
+        height: 250px;
+        width: 70%;
+        float: none;
+        margin: auto;
         border-radius: 20px;
-        float: right;
         overflow: hidden;
     }
     
     .main-content .main-content-whoarewe .main-content-whoarewe-container img{
         width: 100%;
-        height: 150px;
-        text-align: center;
+        height: 100%;
     }
     
     .main-content .main-content-whoarewe .main-content-whoarewe-container .whoarewe-right h2{
@@ -116,7 +127,7 @@
     }
     
     .main-content .main-content-whoarewe .main-content-whoarewe-container .whoarewe-right p{
-        width: 60%;
+        width: 90%;
         font-size: 15px;
         line-height: 1.3;
     }
@@ -130,30 +141,33 @@
         width: 90%;
         margin: auto;
         display: flex;
+        flex-direction: column-reverse;
     }
     
     .main-content .main-content-productshowcase .main-content-productshowcase-container .side .image-frame{
-        height: 50%;
-        width: 50%;
+        height: 250px;
+        width: 70%;
+        margin: auto;
         border-radius: 20px;
-        float: left;
+        float: none;
         overflow: hidden;
     }
     
     .main-content .main-content-productshowcase .main-content-productshowcase-container img{
-        width: 250px;
-        height: 250px;
+        width: 100%;
+        height: 100%;
     }
     
     .main-content .main-content-productshowcase .main-content-productshowcase-container .side{
         padding-top: 30px;
         padding-bottom: 10px;
         flex: auto;
-        width: 50%;
+        width: 100%;
     }
     
     .main-content .main-content-productshowcase .main-content-productshowcase-container .productshowcase-left {
-        margin-right: 50px;
+        margin-right: 0px;
+
     }
     
     .main-content .main-content-productshowcase .main-content-productshowcase-container .productshowcase-left h2{
@@ -163,13 +177,13 @@
         color: #148b8d;
         padding-bottom: 10px;
         margin-bottom: 10px;
-        float: right;
+        float: left;
     }
     
     .main-content .main-content-productshowcase .main-content-productshowcase-container .productshowcase-left p{
-        width: 60%;
-        float: right;
-        text-align: right;
+        width: 90%;
+        float: left;
+        text-align: left;
         font-size: 15px;
         line-height: 1.3;
     }
@@ -183,24 +197,27 @@
         width: 90%;
         margin: auto;
         display: flex;
+        flex-direction: column;
     }
     
     .main-content .main-content-hangoutwithus .main-content-hangoutwithus-container .side .image-frame{
-        height: 150px;
-        width: 150px;
+        height: 250px;
+        width: 70%;
+        margin: auto;
         border-radius: 20px;
-        float: right;
+        float: none;
         overflow: hidden;
     }
     
     .main-content .main-content-hangoutwithus .main-content-hangoutwithus-container img{
-        width: 150px;
-        height: 150px;
+        width: 100%;
+        height: 100%;
     }
     
     .main-content .main-content-hangoutwithus .main-content-hangoutwithus-container .side{
         padding-top: 30px;
         padding-bottom: 10px;
+        margin-left: 0px;
         flex: auto;
         width: 100%;
     }
@@ -216,7 +233,7 @@
     }
     
     .main-content .main-content-hangoutwithus .main-content-hangoutwithus-container .hangoutwithus-right p{
-        width: 60%;
+        width: 90%;
         font-size: 15px;
         line-height: 1.3;
     }
@@ -231,9 +248,72 @@
         padding: 10px 50px;
         background-color: #ab231b;
         color: white;
-        display: inline-block;
         border-radius: 20px;
         margin-top: 30px;
+        float: left;
+    }
+
+    .main-content .main-content-findout .main-content-findout-container{
+        width: 90%;
+        margin: auto;
+    }
+    
+    .main-content .main-content-findout .main-content-findout-container h2{
+        text-align: center;
+        font-weight: bold;
+        font-size: 25px;
+        color: #148b8d;
+        margin: 50px 0 30px 0;
+    }
+    
+    .main-content .main-content-findout .main-content-findout-container a{
+        color: #ec8c04;
+        text-decoration: none;
+        border-bottom: 2px solid #ec8c04;
+    }
+    
+    .main-content .main-content-findout .main-content-findout-container .gallery-coffee{
+        width: 90%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 50px;
+        row-gap: 30px;
+    } 
+    
+    .main-content .main-content-findout .main-content-findout-container .gallery-coffee img{
+        flex: auto;
+        width: 15%;
+    }
+
+    .main-content .main-content-askusmore .main-content-askusmore-container {
+        width: 90%;
+        margin: auto;
+        text-align: center;
+    }
+    
+    .main-content .main-content-askusmore .main-content-askusmore-container h2{
+        font-weight: bold;
+        font-size: 25px;
+        color: #148b8d;
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+    
+    .main-content .main-content-askusmore .main-content-askusmore-container p{
+        font-size: 15px;
+        width: 80%;
+        margin: auto;
+    }
+    
+    .main-content .main-content-askusmore .main-content-askusmore-container a{
+        text-decoration: none;
+        padding: 10px 50px;
+        background-color: #ab231b;
+        color: white;
+        border-radius: 20px;
+        display: inline-block;
+        margin: 20px 0 50px 0;
     }
 
     footer{
@@ -260,12 +340,26 @@
         width: 150px;
         margin-bottom: 10px;
         display: block;
+        float: left;
+    }
+
+    footer .footer-container .footer i{
+        margin-right: 5px;
+        float: right;
     }
     
     footer .footer-container .footer li{
         margin-bottom: 15px;
         color: white;
         font-weight: normal;
+    }
+
+    footer .footer-container .footer-logo{
+        margin-bottom: 20px;
+    }
+
+    footer .footer-container .footer li:not(.menu-head){
+        text-indent: 25px;
     }
     
     footer .footer-container .footer .menu-head{
